@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
 * main - Point d'entrée
@@ -8,6 +8,6 @@
 int main (void)
 {
 	puts("\"La programmation, c'est comme construire un puzzle multilingue");
-
-  return(0);
+	
+	return(0);
 }

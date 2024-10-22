@@ -1,8 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* Add studio.h */
-/* Add line if upper else if and else if lower */
+/**
+ * main - main block
+ * Get a random number and print the number
+ * And if it is positive, negative or zero
+ * Return: 0
+ */
 int main(void)
 {
 	int n;

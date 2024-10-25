@@ -2,14 +2,14 @@
 
 /**
 *_abs - that computes the absolute value of an integer
-*@x: argument
+*@r: argument
 *Return: 0 Always
 */
 
-int _abs(int x)
+int _abs(int r)
 {
-	if (x >= 0)
-		return (x);
+	if (r >= 0)
+		return (r);
 	else
-		return (-x);
+		return (-r);
 }

@@ -12,17 +12,25 @@ void times_table(void)
 
 	for (row = 0; row <= 9; row++)
 	{
-		printf("%d", row);
+		_putchar(row + '0');
+
 		for (col = 1; col <= 9; col++)
 		{
 			prod = col * row;
-			printf(",");
+			_putchar(',');
+			_putchar(' ');
+
 			if (prod <= 9)
 			{
-			printf(" ");
+			_putchar(' ');
+			_putchar(prod + '0');
 			}
-			printf("%d", prod);
+			else
+			{
+			_putchar((prod / 10) + '0');
+			_putchar((prod % 10) + '0');
 			}
-			printf("\n");
+		}
+		_putchar('\n');
 	}
 }

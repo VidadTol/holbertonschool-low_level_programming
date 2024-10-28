@@ -2,14 +2,18 @@
 
 /**
  * _isupper - checks for uppercase character
- * Returns: 1 if c is uppercase
- * Returns 0 otherwise
+ * @c: argument
+ * Return: 0 Always otherwise
  */
 
 int _isupper(int c)
 {
-	if (c = 'A' && c <= 'Z'; c++)
-		 return 1;
+	if (c >= 65 && c <= 90)
+	{
+		return (1);
+	}
 	else
-		return 0;
+	{
+		return (0);
+	}
 }

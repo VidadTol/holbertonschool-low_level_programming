@@ -3,23 +3,30 @@
  * print_diagonal - that draws a diagonal line on the terminal
  * @n: argument
  * _putchar: fonction to print
+ * Return 0 Always
  */
 
 void print_diagonal(int n)
 {
-	int x = 0;
-	int y;
+	int x, y;
 
-	while (x < n)
+	if (x <= n)
 	{
-		y = 0;
-		while (y < x)
+		_putchar('\n');
+		return;
+	}
+	else
+	{	
+		for (x = 0; x < n; x++)
 		{
-			_putchar(' ');
-			y++;
+			for (y = 0; y <= x; y++)
+			{
+				if (y == x)
+					_putchar('\\');
+				else
+					_putchar(' ');
+			}
+			_putchar('\n');
 		}
-		 _putchar('\\');
-		 _putchar('\n');
-		 x++;
 	}
 }

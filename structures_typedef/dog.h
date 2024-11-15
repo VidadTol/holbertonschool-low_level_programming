@@ -3,7 +3,7 @@
 
 
 /**
- * struct dog - dog information
+ * struct dog - struct for dog information
  * @name: name of the dog
  * @age: age of the dog
  * @owner: owner of the dog
@@ -15,6 +15,8 @@ struct dog
 	float age;
 	char *owner;
 };
+
+typedef struct dog dog_t;
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
 

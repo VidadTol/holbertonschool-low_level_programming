@@ -1,6 +1,4 @@
 #include "3-calc.h"
-#include <stdlib.h>
-#include <stdio.h>
 
 /**
  * main - prints the result of simple operations
@@ -30,7 +28,7 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	if ((*argv[2] == '/' || *argv[2] == '%') && num2 == 0)
+	if ((*argv[2] == '/' || *argv[1] == '%') && num2 == 0)
 	{
 		printf("Error\n");
 		return (100);

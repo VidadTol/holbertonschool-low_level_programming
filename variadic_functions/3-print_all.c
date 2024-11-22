@@ -5,6 +5,7 @@
 /**
  * print_all -  prints anything
  * @format: A string of characters representing the argument types
+ * Retunr: 0
  */
 
 void print_all(const char * const format, ...)
@@ -36,10 +37,10 @@ void print_all(const char * const format, ...)
 			}
 		j++;
 		}
-		i++;
+	i++;
 	}
-	printf("\n");
 	va_end(args);
+	printf("\n");
 }
 /**
  * print_char - prints a character of type char
@@ -90,7 +91,7 @@ void print_char_ptr(char *separator, va_list args)
 
 	if (arg == NULL)
 	{
-		printf("%s%s", separator, ("nil"));
+		printf("%s%s", separator, "(nil)");
 		return;
 	}
 	printf("%s%s", separator, arg);

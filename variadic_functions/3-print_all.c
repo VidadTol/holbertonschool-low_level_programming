@@ -19,8 +19,8 @@ void print_all(const char * const format, ...)
 		{'\0', NULL}
 	};
 
-	int i = 0;
-	int j = 0;
+	unsigned int i = 0;
+	unsigned int j = 0;
 	char *separator = "";
 
 	va_start(args, format);

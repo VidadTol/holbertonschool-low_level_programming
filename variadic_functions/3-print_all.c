@@ -15,8 +15,7 @@ void print_all(const char * const format, ...)
 		{"c", print_char},
 		{"i", print_integer},
 		{"f", print_float},
-		{"s", print_char_ptr},
-		{'\0', NULL}
+		{"s", print_char_ptr}
 	};
 
 	unsigned int i = 0;

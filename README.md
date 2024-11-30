@@ -1,3 +1,5 @@
+![logo](https://i.imgur.com/wtYCljm.jpeg)
+
 # holbertonschool-low_level_programming-
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Ga+Maamli+Statique&weight=300&size=30&duration=6500&pause=1000&color=2545D6&width=435&lines=Projects)](https://git.io/typing-svg)

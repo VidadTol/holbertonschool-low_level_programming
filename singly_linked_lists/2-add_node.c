@@ -14,16 +14,13 @@ list_t *add_node(list_t **head, const char *str)
 	new_node = malloc(sizeof(list_t));/*alloc.. memoire pour le nouveau noeud*/
 	if (new_node == NULL)
 	{
+		free(new_node = NULL);
+		new_node = NULL;
 		return (NULL);/* retourne nul si l'allocation échoue*/
 	}
 	/* duplication de la chaine de str*/
 	/* et affecte le pointeur str du nouv noeud a cette copie*/
 	new_node->str = strdup(str);
-	if (new_node->str == NULL)
-	{
-		free(new_node);/* libere la memoire du nouv noeud si strdup échoue*/
-		return (NULL);
-	}
 	/* calcul la long de str et l'affecte au membre len du nouv noeud*/
 	new_node->len = strlen(str);
 	/* mise a jour des pointeurs*/

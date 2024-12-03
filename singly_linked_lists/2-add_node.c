@@ -17,7 +17,6 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);/* retourne nul si l'allocation échoue*/
 	}
 	/* duplication de la chaine de str*/
-	/* et affecte le pointeur str du nouv noeud a cette copie*/
 	new_node->str = strdup(str);
 	if (new_node->str == NULL)
 	{
@@ -26,10 +25,7 @@ list_t *add_node(list_t **head, const char *str)
 	}
 	/* calcul la long de str et l'affecte au membre len du nouv noeud*/
 	new_node->len = strlen(str);
-	/* mise a jour des pointeurs*/
-	/* le pointeur next du nouv noeud pointe vers l'actuelle tete de liste *head*/
-	new_node->next = *head;
-	/* maj de tete de liste *head pour qu'elle pointe vers le nouv noeud*/
+
 	*head = new_node;
 	/* retour du nouveau noeud*/
 	return (*head);

@@ -9,9 +9,8 @@
 
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *new_node = NULL;
+	list_t *new_node = malloc(sizeof(list_t));/*alloue la memoire nouveau noeud*/
 
-	new_node = malloc(sizeof(list_t));/*alloue la memoire nouveau noeud*/
 	if (new_node == NULL)
 	{
 		return (NULL);

@@ -9,24 +9,22 @@
 
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *new_node  = NULL; /*initialisation du nouveau noeud*/
+	list_t *new_node = NULL;
 
-	new_node = malloc(sizeof(list_t));/*alloc.. memoire pour le nouveau noeud*/
+	new_node = malloc(sizeof(list_t));
 	if (new_node == NULL)
 	{
-		return (NULL);/* retourne nul si l'allocation échoue*/
+		return (NULL);
 	}
-	/* duplication de la chaine de str*/
 	new_node->str = strdup(str);
 	if (new_node->str == NULL)
 	{
-		free(new_node);/* libere la memoire du nouv noeud si strdup échoue*/
+		free(new_node);
 		return (NULL);
 	}
-	/* calcul la long de str et l'affecte au membre len du nouv noeud*/
 	new_node->len = strlen(str);
-
+	new_node->next = *head;
 	*head = new_node;
-	/* retour du nouveau noeud*/
+
 	return (*head);
 }

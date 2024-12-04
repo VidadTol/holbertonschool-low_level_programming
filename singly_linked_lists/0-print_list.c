@@ -10,7 +10,7 @@ size_t print_list(const list_t *h)
 {
 	size_t count = 0;/*utilisation de size_t pour le compteur*/
 
-	while (h != NULL)
+	while (h)
 	{
 		if (!h->str)/*verifie si pointeur de chaine est nul*/
 		{

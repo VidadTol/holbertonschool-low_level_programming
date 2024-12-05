@@ -10,22 +10,27 @@
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new_node = malloc(sizeof(list_t));/*alloue la memoire nouveau noeud*/
+	unsigned int len = 0;
 
 	if (new_node == NULL)
 	{
 		return (NULL);
 	}
+	while (str[len])
+		len++;
+
 	new_node->str = strdup(str);/*duplique la chaine str*/
 	if (new_node->str == NULL)
 	{
 		free(new_node);/*libere memoire si strdup échoue*/
 		return (NULL);
 	}
-	new_node->len = strlen(str);/*calcul long de str*/
+	new_node->len = len;/*calcul long de str*/
 	new_node->next = NULL;/* le nouv noeud sera le dernier donc next est NULL*/
 	if (*head == NULL)
 	{
 		*head = new_node;
+		return (new_node);
 	}
 	else
 	{

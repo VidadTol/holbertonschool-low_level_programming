@@ -11,7 +11,7 @@ list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new_node  = NULL; /*initialisation du nouveau noeud*/
 	unsigned int len = 0;
-	
+
 	if (str == NULL)
 		return (NULL);
 
@@ -21,7 +21,6 @@ list_t *add_node(list_t **head, const char *str)
 	new_node = malloc(sizeof(list_t));/*alloc.. memoire pour le nouveau noeud*/
 	if (new_node == NULL)
 	{
-		free(new_node);
 		return (NULL);/* retourne nul si l'allocation échoue*/
 	}
 	/* duplication de la chaine de str*/
